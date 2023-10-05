@@ -9,6 +9,7 @@ import Mainpage from "./Doctor/Mainpage/Mainpage";
 import HospitalLoginPage from "./Hospital/HospitalLogin";
 import HospitalRegisterPage from "./Hospital/HospitalRegister";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import PatientHome from "./Patient/PatientHome";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
     path: "/doctor",
     element: <Mainpage />,
   },
+  { path: "/patient", element: <PatientHome /> },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

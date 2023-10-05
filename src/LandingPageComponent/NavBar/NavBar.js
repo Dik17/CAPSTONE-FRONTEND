@@ -42,7 +42,9 @@ const NavBar = () => {
               {" "}
               <button className="btn1">Hospital</button>
             </Link>
-            <button className="btn">Patient</button>
+            <Link to="/patient">
+              <button className="btn">Patient</button>
+            </Link>
           </div>
         </div>
       </div>
