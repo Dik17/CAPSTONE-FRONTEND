@@ -102,7 +102,7 @@ const PatientSidebar = () => {
             <ListItemIcon>
               <PermIdentityOutlinedIcon sx={{ color: "#d5d8e1" }} />
             </ListItemIcon>
-            <ListItemText primary="Profile" />
+          <Link to='/profile' style={{textDecoration:'none',color:'white'}}>  <ListItemText primary="Profile" /></Link>
           </ListItem>
 
           <ListItem button onClick={handleDocumentsButtonClick}>

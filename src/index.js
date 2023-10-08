@@ -10,7 +10,7 @@ import HospitalLoginPage from "./Hospital/HospitalLogin";
 import HospitalRegisterPage from "./Hospital/HospitalRegister";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PatientHome from "./Patient/PatientHome";
-
+import Profile from "./Patient/profile/Profile";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/doctor",
     element: <Mainpage />,
+  },
+  {
+    path: "/profile",
+    element: <Profile />,
   },
   { path: "/patient", element: <PatientHome /> },
 ]);
