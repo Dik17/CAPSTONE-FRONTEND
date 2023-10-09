@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { Box } from "@material-ui/core";
 import Sidebar from "../../Hospital/Dashboard/Reception/Sidebar";
 const Mainpage = () => {
   const url =
@@ -20,10 +20,9 @@ const Mainpage = () => {
   return (
     <div>
       <Sidebar />
-      <img
-        src="https://pic.pikbest.com/02/04/68/29V888piCtXe.jpg!w340"
-        style={{ minWidth: "40%",marginLeft:'70%',marginTop:'-25%'}}
-      />
+       <Box>
+        <img src="https://t3.ftcdn.net/jpg/02/74/72/96/360_F_274729600_073JyJngzhXQ5NbSlDOdjdcFCBJprzqi.jpg" style={{marginLeft:'65%',height:'35%',width:'35%',marginTop:'-200%'}}></img>
+      </Box>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import Register from "./LandingPageComponent/Register/Register";
 import Login from "./LandingPageComponent/Login/Login";
+import ProfileDoc from "./Doctor/Profile/ProfileDoc";
 import Dashboard from "./Hospital/Dashboard/Dashboard";
 import Reception from "./Hospital/Dashboard/Reception/Reception";
 import Mainpage from "./Doctor/Mainpage/Mainpage";
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: "/timelineinfo",
     element: <TimeLineInfo/>,
+  },
+  {
+    path: "/profileDoctor",
+    element: <ProfileDoc/>,
   },
   { path: "/patient", element: <PatientHome /> },
 
