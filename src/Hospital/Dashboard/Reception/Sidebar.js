@@ -114,7 +114,7 @@ const Sidebar= () => {
             <ListItemIcon>
               <FolderCopyOutlinedIcon sx={{ color: "#d5d8e1" }} />
             </ListItemIcon>
-            <ListItemText primary="Documents" />
+        <Link to='/activepatient'  style={{textDecoration:'none',color:'white'}}>  <ListItemText primary="Active Patient List" /></Link>  
           </ListItem>
 
           <ListItem button onClick={handleTrashButtonClick}>

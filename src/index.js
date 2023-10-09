@@ -13,6 +13,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PatientHome from "./Patient/PatientHome";
 import Profile from "./Patient/profile/Profile";
 import TimeLineInfo from "./Patient/TimeLineInfo/TimeLineInfo";
+import ActivePatientList from "./Doctor/ActivePatient/ActivePatientList";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -49,6 +50,11 @@ const router = createBrowserRouter([
   {
     path: "/profileDoctor",
     element: <ProfileDoc/>,
+  },
+  
+  {
+    path: "/activepatient",
+    element: <ActivePatientList/>,
   },
   { path: "/patient", element: <PatientHome /> },
 
