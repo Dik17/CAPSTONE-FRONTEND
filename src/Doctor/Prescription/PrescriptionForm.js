@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './Prescription.css'
 const PrescriptionForm = () => {
   const [patientName, setPatientName] = useState('');
   const [medications, setMedications] = useState('');
@@ -17,31 +17,32 @@ const PrescriptionForm = () => {
   };
 
   return (
-    <div>
-      <h2>Prescription Form</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="patientName">Patient Name:</label>
-          <input
-            type="text"
-            id="patientName"
-            value={patientName}
-            onChange={(e) => setPatientName(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="medications">Medications:</label>
-          <textarea
-            id="medications"
-            value={medications}
-            onChange={(e) => setMedications(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit">Submit Prescription</button>
-      </form>
-    </div>
+    <div className="prescription-form" style={{marginTop:'10%'}}>
+    <h2>Prescription Form</h2>
+    <form onSubmit={handleSubmit} style={{marginRight:'20px'}}>
+      <div >
+        <label htmlFor="patientName">Patient Name:</label>
+        <input
+          type="text"
+          id="patientName"
+          value={patientName}
+          onChange={(e) => setPatientName(e.target.value)}
+          required
+          
+        />
+      </div>
+      <div>
+        <label htmlFor="medications">Medications:</label>
+        <textarea
+          id="medications"
+          value={medications}
+          onChange={(e) => setMedications(e.target.value)}
+          required
+        />
+      </div>
+      <button type="submit" style={{backgroundColor:"#82A2C5"}}>Submit Prescription</button>
+    </form>
+  </div>
   );
 };
 
