@@ -116,8 +116,9 @@ const PatientSidebar = () => {
             <ListItemIcon>
               <TimelineIcon sx={{ color: "#d5d8e1" }} />
             </ListItemIcon>
-            <ListItemText primary="TimeLine" />
+            <Link to='/timelineinfo' style={{textDecoration:'none',color:'white'}}>    <ListItemText primary="TimeLine" /></Link>
           </ListItem>
+       
           <ListItem button onClick={handleTrashButtonClick}>
             <ListItemIcon>
               <BlockIcon sx={{ color: "#d5d8e1" }} />

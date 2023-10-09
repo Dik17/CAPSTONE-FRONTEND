@@ -11,6 +11,7 @@ import HospitalRegisterPage from "./Hospital/HospitalRegister";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PatientHome from "./Patient/PatientHome";
 import Profile from "./Patient/profile/Profile";
+import TimeLineInfo from "./Patient/TimeLineInfo/TimeLineInfo";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -40,7 +41,12 @@ const router = createBrowserRouter([
     path: "/profile",
     element: <Profile />,
   },
+  {
+    path: "/timelineinfo",
+    element: <TimeLineInfo/>,
+  },
   { path: "/patient", element: <PatientHome /> },
+
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
