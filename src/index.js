@@ -14,6 +14,7 @@ import PatientHome from "./Patient/PatientHome";
 import Profile from "./Patient/profile/Profile";
 import TimeLineInfo from "./Patient/TimeLineInfo/TimeLineInfo";
 import ActivePatientList from "./Doctor/ActivePatient/ActivePatientList";
+import PrescriptionForm from "./Doctor/Prescription/PrescriptionForm";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
   {
     path: "/activepatient",
     element: <ActivePatientList/>,
+  },
+  {
+    path: "/prescription",
+    element: <PrescriptionForm/>,
   },
   { path: "/patient", element: <PatientHome /> },
 

@@ -116,21 +116,8 @@ const Sidebar= () => {
             </ListItemIcon>
         <Link to='/activepatient'  style={{textDecoration:'none',color:'white'}}>  <ListItemText primary="Active Patient List" /></Link>  
           </ListItem>
-
-          <ListItem button onClick={handleTrashButtonClick}>
-            <ListItemIcon>
-              <DeleteOutlineIcon sx={{ color: "#d5d8e1" }} />
-            </ListItemIcon>
-            <ListItemText primary="Trash" />
-          </ListItem>
-          <ListItem button sx={{ marginTop: "320px" }}>
-            <ListItemIcon>
-              <InfoIcon sx={{ color: "#d5d8e1" }} />
-            </ListItemIcon>
-
-            <ListItemText primary="About Us" sx={{ marginLeft: "-20px" }} />
-          </ListItem>
-          <ListItem button sx={{}} onClick={handleLogOut}>
+      
+          <ListItem button sx={{}} onClick={handleLogOut} style={{marginTop:'150%'}}>
             <ListItemText primary="Log Out" />
             <ListItemIcon>
               <LogoutOutlinedIcon
